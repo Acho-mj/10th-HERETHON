@@ -1,0 +1,89 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+	font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+		"Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+		"Malgun Gothic", sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #efefe6;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+	display: none;
+}
+.container {
+	width: 428px;
+	height: 926px;
+	background: #efefe6;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header {
+	margin-top: 40px;
+}
+.undo-button {
+	transform: rotate(180deg);
+	width: 21px;
+	height: 21px;
+	float: left;
+	margin-left: 20px;
+}
+.close-button {
+	width: 21px;
+	height: 21px;
+	float: right;
+	margin-right: 20px;
+}
+.text-container {
+	margin-top: 330px;
+	margin-left: 25px;
+}
+.text-flag {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+}
+.text-1 {
+	margin-top: 17px;
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+}
+.text-2 {
+	margin-top: 4px;
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+}
+.button-answer,
+.button-question {
+	width: 378px;
+	height: 50px;
+	background-color: #cdbba7;
+	border-radius: 30px;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-align: center;
+}
+.button-answer {
+	margin-top: 77px;
+	margin-bottom: 8px;
+}
+.button-answer-text,
+.button-question-text {
+	color: #fff;
+	text-decoration: none;
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 50px;
+}

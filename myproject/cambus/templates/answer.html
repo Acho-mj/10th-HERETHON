@@ -1,0 +1,10 @@
+<h1>답변란</h1>
+
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type='submit' value="답변 등록하기">
+</form>

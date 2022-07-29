@@ -1,0 +1,5 @@
+<form action="{% url 'nickname' %}" method="POST">
+    {% csrf_token %}
+    사용자 닉네임 : <input type='text' name="myname">
+    <input type ="submit" value="확정">
+</form>

@@ -1,0 +1,40 @@
+{% load static %}
+{% load socialaccount %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인페이지</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pretendard&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <span class="v2_16">CAMBUS</span
+      ><span class="v4_195">나만의 대학 생활 문답 기록</span>
+      <img class="v4_219" src="{% static 'img/메인 이미지.png' %}"/>
+      <div class="v4_191"></div>
+      <span class="v4_193">비회원으로 시작하기</span>
+      <div class="v4_190"></div>
+      <div class="v11_2694">
+        <span class="v4_192">
+            <a href="{% provider_login_url 'kakao' method='oauth2' %}">
+                카카오로 시작하기
+            </a>
+        </span>
+        <img class="v4_196" src="{% static 'img/kakao.png' %}" />
+      </div>
+      <div class="v4_235"><div class="name"></div></div>
+    </div>
+  </body>
+</html>
